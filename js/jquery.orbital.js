@@ -1,4 +1,3 @@
-//TODO: onhover: stop animation
 
 (function ($) {
     'use strict';
@@ -11,13 +10,13 @@
         });
 
 
-        createOrbitals(this);
+        createOrbitals(this, opts);
         return false;
     };
 
-    function createOrbitals(elements) {
+    function createOrbitals(elements, opts) {
         $('head').append('<style class="orbital-styles"></style>');
-        var numberOfElements = $(elements).length, counter = 0;
+        var counter = 0;
         var angleIncrement = 360 / $(elements).length;
         $(elements).each(function () {
             var originHeight = '0' + ' ' + ($(this).parent().height() / 2 - 7);
@@ -46,7 +45,7 @@
                     'transform': 'rotate(' + counterToAngle + 'deg)' //Note that 'transform' will be autoprefixed for you
                 }
             });
-            var duration = '90s';
+            var duration = opts.duration;
             $(this).parent().playKeyframe({
                 name: 'rotate' + counter, // name of the keyframe you want to bind to the selected element
                 duration: duration, // [optional, default: 0, in ms] how long you want it to last in milliseconds
@@ -72,7 +71,7 @@
     }
 
     $.fn.orbitals.defaults = {
-
+        duration: '90s'
     };
 
-}(jQuery));
+})(jQuery);

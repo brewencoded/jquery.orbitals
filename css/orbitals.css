@@ -1,0 +1,5 @@
+/* This is the only css you will need to get out of box support */ 
+.orbit-container {
+    height: 100%;
+    width: 100%;
+}

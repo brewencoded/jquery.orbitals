@@ -14,6 +14,10 @@ var gulp = require('gulp'),
 ///////////////////////////////////////////////////
 // JS
 ///////////////////////////////////////////////////
+gulp.task('js-maps', ['concat-js'], function () {
+	return gulp.src('js/maps/*')
+			.pipe(gulp.dest('dist/js/maps'));
+});
 
 gulp.task('concat-js', ['minify-js'],  function () {
 	return gulp.src('js/**/*.min.js')
@@ -29,11 +33,11 @@ gulp.task('minify-js', function () {
 			.pipe(sourcemaps.init())
 			.pipe(uglify())
 			.pipe(rename('jquery.orbitals.min.js'))
-			.pipe(sourcemaps.write('../dist/maps'))
+			.pipe(sourcemaps.write('maps'))
 			.pipe(gulp.dest('js'));
 });
 
-gulp.task('js-watch', ['concat-js'], browserSync.reload);
+gulp.task('js-watch', ['js-maps'], browserSync.reload);
 
 ///////////////////////////////////////////////////
 // CSS
@@ -45,7 +49,7 @@ gulp.task('lib-css', ['user-css'], function () {
 			.pipe(sourcemaps.init())
 			.pipe(minifyCss())
 			.pipe(rename('orbitals.min.css'))
-			.pipe(sourcemaps.write('../dist/maps'))
+			.pipe(sourcemaps.write('maps'))
 			.pipe(gulp.dest('dist/css'))
 			.pipe(browserSync.stream());
 });
@@ -56,7 +60,7 @@ gulp.task('user-css', function () {
 			.pipe(sourcemaps.init())
 			.pipe(minifyCss())
 			.pipe(rename('style.min.css'))
-			.pipe(sourcemaps.write('../dist/maps'))
+			.pipe(sourcemaps.write('maps'))
 			.pipe(gulp.dest('dist/css'))
 			.pipe(browserSync.stream());
 });

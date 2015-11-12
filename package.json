@@ -1,0 +1,32 @@
+{
+  "name": "jquery.orbitals",
+  "version": "1.0.0",
+  "description": "Jquery plugin for orbiting elements",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-uglify": "^1.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrodriguez363/jquery.orbitals.git"
+  },
+  "keywords": [
+    "orbit",
+    "rotate",
+    "jquery"
+  ],
+  "author": "Victor A. Rodriguez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vrodriguez363/jquery.orbitals/issues"
+  },
+  "homepage": "https://github.com/vrodriguez363/jquery.orbitals#readme"
+}

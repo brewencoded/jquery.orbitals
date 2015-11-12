@@ -1,0 +1,23 @@
+{
+  "name": "jquery.orbitals",
+  "homepage": "https://github.com/vrodriguez363/jquery.orbitals",
+  "authors": [
+    "Victor Rodriguez <vrodriguez5749@gmail.com>"
+  ],
+  "description": "Simple jquery plugin for creating orbiting elements",
+  "main": ["./dist/js/jquery.orbitals, ./dist/js/jquery.keyframes.min.js", "./dist/css/orbitals.css"],
+  "moduleType": [],
+  "keywords": [
+    "orbit",
+    "revolve",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

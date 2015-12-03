@@ -1,0 +1,19 @@
+.example {
+	height: 20em;
+	background-color: #CACACA; 
+	padding: 1em 0;
+}
+
+.orbital {
+	height: 4em;
+	line-height: 4em;
+	width: 4em;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: .25em .25em .25em #777;
+	background: radial-gradient(#CCC, #AAA, #888);
+}
+
+.head {
+	text-align: center;
+}

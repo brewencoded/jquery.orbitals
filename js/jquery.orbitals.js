@@ -15,7 +15,6 @@
     };
 
     function createOrbitals(elements, opts) {
-        $('head').append('<style class="orbital-styles"></style>');
         var counter = 0;
         var angleIncrement = 360 / $(elements).length;
         $(elements).each(function () {

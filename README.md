@@ -4,15 +4,15 @@ A jquery plugin to create orbiting elements around the center of a parent elemen
 ### Requirements
 In order for jQuery.Orbitals to work the jQuery library needs to be linked either through CDN:
 
-``
+```
 <script src='http://code.jquery.com/jquery-x.x.x.js'></script>
-``
+```
 
 or local copy:
 
-``
+```
 <script src='/path/to/jquery-x.x.x.js'></script>
-``
+```
 
 ### Installation
 Include script in your document using the following line:

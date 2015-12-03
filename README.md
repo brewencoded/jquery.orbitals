@@ -1,5 +1,6 @@
 # JQuery Orbitals
-A jquery plugin to create orbiting elements around the center of a parent element
+A jquery plugin to create orbiting elements around the center of a parent element.
+Built using the amazing [jQuery.Keyframes](https://github.com/Keyframes/jQuery.Keyframes) framework.
 
 ### Requirements
 In order for jQuery.Orbitals to work the jQuery library needs to be linked either through CDN:
@@ -18,8 +19,9 @@ or local copy:
 Include script in your document using the following line:
 
 ```
-<script src='/path/to/jquery.orbitals.js'></script>
+<script src='/path/to/jquery.orbitals.min.js'></script>
 ```
+If you choose to to use the 
 Optionally, include the css file. If you don't use the orbital.css file, make sure the wrapping div has a height  specified.
 
 ### Usage
